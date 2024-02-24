@@ -1,0 +1,13 @@
+#projects h1 {
+    font-family: 'Roboto', sans-serif;
+    }
+#projects img {
+    border-radius: 10px;
+}
+#projects .project-description {
+    border: 1px solid #FF00FF;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e4cbf7;
+    color: #ffffff;
+}

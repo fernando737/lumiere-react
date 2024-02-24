@@ -1,51 +1,34 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import { BiWorld, BiCircle, BiLibrary, BiBuildings } from 'react-icons/bi';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { Card, Container, Row, Col } from 'react-bootstrap';
 
-AOS.init();
+const services = [
+  { name: 'Ambiente', image: '/images/dummy-600x400.png', description: 'Description for Ambiente' },
+  { name: 'Equidad de genero', image: '/images/dummy-600x400.png', description: 'Description for Equidad de genero' },
+  { name: 'Cultura', image: '/images/dummy-600x400.png', description: 'Description for Cultura' },
+  { name: 'Derecho a la ciudad', image: '/images/dummy-600x400.png', description: 'Description for Derecho a la ciudad' },
+];
 
 function Services() {
   return (
-    <section id="services" className="services section-bg">
-      <Container>
-        <div className="section-title" data-aos="fade-up">
-          <h2>Servicios</h2>
-          <p>Revisa los servicios que ofrecemos a la comunidad</p>
-        </div>
-
+    <Container id="services" fluid>
+      <Container className="vh-100 d-flex flex-column justify-content-center align-items-center">
+        <h1>Nuestros Servicios</h1>
+        <p>Servicios enfocados en la comunidad y el desarrollo social</p>
         <Row>
-          <Col md={6} lg={3} className="d-flex" data-aos="zoom-in" data-aos-delay="100">
-            <div className="icon-box">
-              <div className="icon"><BiWorld /></div>
-              <h4 className="title">Ambiente</h4>
-            </div>
-          </Col>
-
-          <Col md={6} lg={3} className="d-flex" data-aos="zoom-in" data-aos-delay="200">
-            <div className="icon-box">
-              <div className="icon"><BiCircle /></div>
-              <h4 className="title">Equidad de genero</h4>
-            </div>
-          </Col>
-
-          <Col md={6} lg={3} className="d-flex" data-aos="zoom-in" data-aos-delay="300">
-            <div className="icon-box">
-              <div className="icon"><BiLibrary /></div>
-              <h4 className="title">Cultura</h4>
-            </div>
-          </Col>
-
-          <Col md={6} lg={3} className="d-flex" data-aos="zoom-in" data-aos-delay="400">
-            <div className="icon-box">
-              <div className="icon"><BiBuildings /></div>
-              <h4 className="title">Derecho a la ciudad</h4>
-            </div>
-          </Col>
+          {services.map((service, index) => (
+            <Col sm={6} md={4} lg={3} key={index}>
+              <Card>
+                <Card.Img variant="top" src={service.image} alt={service.name} />
+                <Card.Body>
+                  <Card.Title>{service.name}</Card.Title>
+                  <Card.Text>{service.description}</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
         </Row>
       </Container>
-    </section>
+    </Container>
   );
 }
 

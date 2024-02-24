@@ -6,7 +6,8 @@ WORKDIR /app
 
 # Install dependencies
 COPY package*.json ./
-RUN npm install
+
+RUN npm install && ls node_modules
 
 # Expose the port the app runs on
 EXPOSE 3000
