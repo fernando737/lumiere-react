@@ -12,7 +12,7 @@ function Services() {
   return (
     <Container id="services" fluid>
       <Container className="vh-100 d-flex flex-column justify-content-center align-items-center">
-        <h1>Nuestros Servicios</h1>
+        <h1 className='section-title'>Nuestros Servicios</h1>
         <p>Servicios enfocados en la comunidad y el desarrollo social</p>
         <Row>
           {services.map((service, index) => (

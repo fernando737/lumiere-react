@@ -10,7 +10,7 @@ function About() {
               <img src='/images/about-img.svg' className="img-fluid" alt="Acerca de Lumiere" />
             </Col>
             <Col lg={6} className="pt-5 pt-lg-0">
-              <h3>¿Qué es Lumiére?</h3>
+              <h3 className='section-title'>¿Qué es Lumiére?</h3>
               <p>
                 Lumiére es una organización civil dedicada a impulsar proyectos que promuevan el desarrollo humano, territorial, social y económico sostenible en las comunidades. Nuestras propuestas utilizan estrategias innovadoras que incluyen componentes tecnológicos en búsqueda de facilitar el acceso de los proyectos a personas de diferentes ubicaciones geográficas y grupos poblacionales.
               </p>

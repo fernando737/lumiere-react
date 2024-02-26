@@ -6,13 +6,9 @@ body {
 
 .section-title{
   font-family: 'Roboto', sans-serif;
-  color: #009DFF;
+  color: #ff5500;
   font-size: 2.5em;
   margin-bottom: 0.5em;
-}
-
-#projects{
-  background-color: #f4e8fd;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,26 +21,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px;
 }
 
-.main-content {
-  padding: 20px;
-}
-
-@media (max-width: 600px) {
-  .header, .footer {
-    padding: 10px;
-  }
-
-  .main-content {
-    padding: 10px;
-  }
-}
-
-#hero img {
+#home img {
   animation: moveUpDown 5s infinite;
 }
 
-#contactus li {
+#footer li {
   list-style-type: none;
+}
+#header .active {
+  color:  #ff5500;
 }
 
 @keyframes moveUpDown {

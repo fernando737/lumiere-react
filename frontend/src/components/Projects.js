@@ -11,7 +11,7 @@ const projects = [
 function Projects() {
     return (
       <Container id="projects" fluid>
-        <Container className="vh-100 d-flex flex-column justify-content-center align-items-center my-auto">
+        <Container className="vh-100 d-flex flex-column justify-content-center align-items-center">
           <h1 className='section-title'>Nuestros proyectos</h1>
           {projects.map((project, index) => (
             <Row key={index} className="mb-3">
